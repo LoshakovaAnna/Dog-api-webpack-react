@@ -26,7 +26,7 @@ class  PageRandomDogs  extends Component {
                     />
                 </div>
                 <div key="2" id="imagePlace" className="d-flex flex-row flex-wrap justify-content-center">
-                    <ImageDogsSet src={this.props.arrLinkImages}  />
+                    <ImageDogsSet  />
                 </div>
             </div>
         );
@@ -35,6 +35,7 @@ class  PageRandomDogs  extends Component {
     componentDidMount(){
         this.props.clearArrayLinkImage();
     }
+
     loadImages = () =>{
         let countDogsValue = document.getElementById('inputCountDog').value;
         let changeUrlForLoadLinksImage = this.props.changeUrlForLoadLinksImage;
@@ -61,6 +62,4 @@ const  putActionToProps = (dispatch) =>{
     }
   };
 
-
 export default connect(putStateToProps, putActionToProps)(PageRandomDogs);
-

@@ -1,11 +1,11 @@
-import React, { Component} from 'react';
-import {  bindActionCreators } from 'redux';
+import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import {  changeUrlForLoadLinksImage } from '../../store/actions';
+import { changeUrlForLoadLinksImage } from '../../store/actions';
 import ImageDogsSet from '../ImageDogsSet';
 import loadLinksOfImages from '../../load_function/LoadLinksOfImages';
 
-class dinamicPageSpecDog  extends Component {
+class DinamicPageSpecDog  extends Component {
    
     render() {
       return ( 
@@ -59,4 +59,4 @@ const  putActionToProps = (dispatch) =>{
   }
 };
 
-export default connect(putStateToProps, putActionToProps)(dinamicPageSpecDog);
+export default connect(putStateToProps, putActionToProps)(DinamicPageSpecDog);

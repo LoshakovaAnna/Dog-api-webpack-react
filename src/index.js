@@ -9,7 +9,7 @@ import App from './components/App';
 import PageRandomDogs from './components/pages/PageRandomDogs';
 import PageListDogs from './components/pages/PageListDogs';
 import PageSpecificDogs from './components/pages/PageSpecificDogs';
-import dinamicPageSpecDog from './components/pages/dinamicPageSpecDog';
+import DinamicPageSpecDog from './components/pages/DinamicPageSpecDog';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css';
@@ -24,7 +24,7 @@ render(
           <Route path = '/list' component={PageListDogs}/>
           <Route path = '/random-dogs' component={PageRandomDogs}/>            
           <Route path = '/specific-dog-choose' component={PageSpecificDogs}/> 
-          <Route path = '/specific-dog/:breed' component={dinamicPageSpecDog}/> 
+          <Route path = '/specific-dog/:breed' component={DinamicPageSpecDog}/> 
       </div>
     </BrowserRouter>
   </Provider>,

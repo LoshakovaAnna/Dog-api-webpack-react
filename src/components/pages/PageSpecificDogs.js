@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import {  setChosenBreed, clearArrayLinkImage } from '../../store/actions';
+import { setChosenBreed, clearArrayLinkImage } from '../../store/actions';
 import loadListBreedDogs from '../../load_function/LoadListBreedDogs';
 
 class  PageSpecificDogs  extends Component {

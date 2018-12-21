@@ -13,7 +13,7 @@ export const rootReducer = (state = initialState, action) => {
     switch (action.type){
       case 'PUT_BREED_DOG_TO_LIST' :
       {
-        const newList = state.listBreedDogs; 
+        const newList = state.listBreedDogs.concat([]);  
         if (newList.indexOf(action.payload) === -1) 
             newList.push(action.payload);
         return {...state, listBreedDogs : newList};
